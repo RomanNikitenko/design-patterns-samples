@@ -1,0 +1,15 @@
+{
+  "name": "design-patterns-samples",
+  "version": "1.0.0",
+  "author": "Roman Nikitenko",
+  "description": "Design patterns samples",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanNikitenko/design-patterns-samples.git"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "strategy": "clear && cd strategy && npm install && npm run compile && node lib/index.js"
+  }
+}
