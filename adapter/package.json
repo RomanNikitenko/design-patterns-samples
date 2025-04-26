@@ -1,0 +1,19 @@
+{
+  "name": "@design-patterns-samples/adapter",
+  "version": "0.0.1",
+  "description": "Sample for the Adapter pattern",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanNikitenko/design-patterns-samples.git"
+  },
+  "author": "Roman Nikitenko",
+  "private": true,
+  "scripts": {
+    "compile": "tsc",
+    "test": "clear && npm install && npm run compile && node lib/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "typescript": "~5.7.3"
+  }
+}

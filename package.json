@@ -10,6 +10,7 @@
   },
   "scripts": {
     "compile": "tsc",
+    "adapter": "clear && cd adapter && npm install && npm run compile && node lib/index.js",
     "strategy": "clear && cd strategy && npm install && npm run compile && node lib/index.js"
   }
 }
