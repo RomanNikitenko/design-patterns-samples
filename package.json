@@ -13,6 +13,7 @@
     "adapter": "clear && cd adapter && npm install && npm run compile && node lib/index.js",
     "decorator": "clear && cd decorator && npm install && npm run compile && node lib/index.js",
     "observer": "clear && cd observer && npm install && npm run compile && node lib/index.js",
+    "simple-factory": "clear && cd factory/simple && npm install && npm run compile && node lib/index.js",
     "strategy": "clear && cd strategy && npm install && npm run compile && node lib/index.js"
   }
 }
