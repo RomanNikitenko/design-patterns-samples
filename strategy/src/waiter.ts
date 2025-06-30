@@ -8,14 +8,14 @@ export class Waiter {
 
 	constructor() {
 		this.menu = new Menu();
-		this.readlineInstance = getreadlineInstance();
+		this.readlineInstance = getReadlineInstance();
 	}
 
 	async serve() {
 		console.info('Please do your order - What would you like to drink?');
 
 		try {
-			const choice = await this.geVisitorChoice();
+			const choice = await this.getVisitorChoice();
 			const count = await this.getCount();
 			const cost = this.menu.getCost(choice);
 			if (!cost) {
@@ -41,7 +41,7 @@ export class Waiter {
 		}
 	}
 
-	private async geVisitorChoice(promise?: Promise<string>): Promise<string> {
+	private async getVisitorChoice(promise?: Promise<string>): Promise<string> {
 		const menuItems = this.menu.getMenuItems();
 		console.info(`Menu: ${menuItems.join(' ')}\n`);
 
@@ -88,7 +88,7 @@ export class Waiter {
 	}
 }
 
-function getreadlineInstance() {
+function getReadlineInstance() {
 	return readline.createInterface({
 		input: process.stdin,
 		output: process.stdout
